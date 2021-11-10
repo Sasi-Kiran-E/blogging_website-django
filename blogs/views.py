@@ -68,15 +68,14 @@ def updateBlog(request, post_id):
     context = {
         'post' : post,
     }
-    current_user = request.user
     if request.method == 'POST':
         title = request.POST['title']
         body = request.POST['body']
         post.title = title
         post.body = body
         post.save()
-        return redirect('myblogs')
         messages.success(request, 'Blog updated successfully')
+        return redirect('myblogs')
     return render(request, 'blogs/updateblog.html', context)
 
 
