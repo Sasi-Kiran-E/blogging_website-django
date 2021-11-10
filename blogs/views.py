@@ -27,7 +27,7 @@ def search(request):
     if 'keyword' in request.GET:
         data = request.GET['keyword']
         if data:
-            posts = posts.filter(body__icontains=data)
+            posts = posts.filter(body__icontains=data) | posts.filter(title__icontains=data)
 
     count = posts.count()
     context = {
