@@ -20,29 +20,29 @@
             {% csrf_token %}
             <div class="mb-3">
                 <label class="form-label">Firstname</label>
-                <input name="firstname" type="text" class="form-control">
+                <input name="firstname" type="text" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Lastname</label>
-                <input name="lastname" type="text" class="form-control">
+                <input name="lastname" type="text" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Username</label>
-                <input name="username" type="text" class="form-control">
+                <input name="username" type="text" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input name="email" type="text" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+                    aria-describedby="emailHelp" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Confirm password</label>
-                <input name="confirm_password" type="password" class="form-control" id="exampleInputPassword1">
+                <input name="confirm_password" type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
             <button type="submit" class="btn btn-outline-primary">Submit</button>
         </form>
