@@ -14,7 +14,7 @@ pip install pipenv
 _clone the repo to any directory_
 
 ```cmd
-git clone https://github.com/Sasi-Kiran-E/blogging_website-django.git
+git clone https://github.com/sasikiranE/blogging_website-django.git
 ```
 
 _navigate to the project directory and activate virtual environment_
